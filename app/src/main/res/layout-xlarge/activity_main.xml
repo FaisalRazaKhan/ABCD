@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- For Phone Number Input-->
+    <LinearLayout
+        android:id="@+id/phonecell"
+        android:layout_width="1862dp"
+        android:layout_height="770dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/loginName"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="@string/Text1"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_25ssp" />
+
+        <TextView
+            android:id="@+id/Describe"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="@string/Text_Via"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+        <EditText
+            android:id="@+id/SendOtp"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/card_view"
+            android:hint="MOBILE NUMBER"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/_15sdp"
+            android:textColorHint="#C1C1C1" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="@dimen/_112sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_164sdp"
+            android:background="@drawable/button_round"
+            android:text="@string/Text_send"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- For OTP Code Recived-->
+    <LinearLayout
+        android:id="@+id/otpenter"
+        android:layout_width="1860dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="1846dp"
+            android:layout_height="131dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="@string/Text1"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_25ssp" />
+
+        <TextView
+            android:id="@+id/Describe1"
+            android:layout_width="1840dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="@string/Text_rec"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+        <EditText
+            android:id="@+id/reciveOtp"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/card_view"
+            android:hint="ENTER OTP"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="@dimen/_15sdp"
+            android:textColorHint="#C1C1C1" />
+
+        <Button
+            android:id="@+id/recive"
+            android:layout_width="@dimen/_112sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:background="@drawable/button_round"
+            android:text="SUBMIT"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_290sdp"
+            android:layout_height="99dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ref" />
+
+            <TextView
+                android:id="@+id/resendotp_text"
+                android:layout_width="1120dp"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="23dp"
+                android:text="@string/resend_otp"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_button"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_290sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/call_1" />
+
+            <TextView
+                android:id="@+id/chgmobile_text"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="23dp"
+                android:text="Change mobile number"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_button"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
